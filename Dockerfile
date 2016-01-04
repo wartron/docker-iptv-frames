@@ -20,5 +20,6 @@ RUN useradd --create-home --home-dir $HOME vlc \
 WORKDIR $HOME
 USER vlc
 
-ADD capture3.sh   /home/vlc/capture3.sh
 ADD capture.py   /home/vlc/capture.py
+ADD vlcclient.py   /home/vlc/vlcclient.py
+ADD launchvlc.sh   /home/vlc/launchvlc.sh
